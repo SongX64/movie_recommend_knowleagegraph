@@ -71,7 +71,7 @@ def queries():
 
         # 电影类型
         genre = []
-        if int(input("是否排除类型？输入0或1:")):
+        if int(input("是否筛选喜欢的类型？输入0或1: ")):
             # 排除的话
             with driver.session() as session:
                 try:
@@ -87,7 +87,7 @@ def queries():
                     print(df)
 
                     # 根据上面的输出，输入类型
-                    inp = input("请输入喜欢的类型，例如 1 2 3 ：")
+                    inp = input("请输入喜欢的类型，例如 1 2 3 ： ")
                     if len(inp) != 0:
                         inp = inp.split(" ")
                         # TODO 这里是什么意思? lamuda表达式 ???

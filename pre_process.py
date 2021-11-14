@@ -47,7 +47,11 @@ def Netflix(MAX_USER=1000):
     out_grade.write("user_id,title,grade\n")
 
     # 文件集合，讲道理是可以读取多个的，然后针对每个文件进行循环处理
-    files = {"datasets/combined_data_1.txt"}
+    # 电脑卡的话就只用第一个就行
+    files = {"datasets/combined_data_1.txt",
+             "datasets/combined_data_2.txt",
+             "datasets/combined_data_3.txt",
+             "datasets/combined_data_4.txt"}
 
     # 数据格式：
     # 电影ID:
